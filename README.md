@@ -34,9 +34,8 @@ sudo apt-get install ros-melodic-geodesy
 安装步骤
 
 ```bash
-mkdir & cd ros_rtk_driver
-mkdir src
-cd ..
+mkdir -p ros_rtk_driver/src
+cd ros_rtk_driver
 catkin init
 catkin config --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo
 cd src
