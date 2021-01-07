@@ -63,7 +63,7 @@ sudo apt-get install ros-${ROS_DISTRO}-novatel-gps-driver
     <rosparam>
       connection_type: serial
       device: /dev/ttyS0
-      imu_sample_rate: 100
+      imu_sample_rate: 50
       publish_imu_messages: true
       frame_id: /gps
     </rosparam>
@@ -77,16 +77,16 @@ sudo apt-get install ros-${ROS_DISTRO}-novatel-gps-driver
 
 
 
-## bewis_ros_driver
-北微传感器的 ros驱动，包括串口读取，解析，发布tf，订阅rtk topic等功能
+## Electronic_fence
+电子围栏数据处理功能包，包括rtk数据解析，卡尔曼滤波，位置姿态tf发布。
 
 安装步骤
 
 ```bash
-mkdir & cd ros_angle_driver
+mkdir & cd Electronic_fence
 mkdir src
 cd src
-gitclone https://github.com/Loricon/bewis_ros_driver.git
+https://github.com/Loricon/Electronic_fence.git
 cd ..
 catkin_make
 source /build/setup.bash
@@ -96,6 +96,9 @@ source /build/setup.bash
 roscore
 rosrun serialtest serialtest
 ```
-
+或
+```bash
+roslaunch serialtest.launch 
+```
 
 提示：编译过程中出现未安装依赖或缺少某文件时，建议运行rosdep install . --from-paths -i
