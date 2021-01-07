@@ -39,7 +39,7 @@ cd ros_rtk_driver
 catkin init
 catkin config --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo
 cd src
-git clone https://github.com/Loricon/bewis_ros_driver.git
+https://github.com/Loricon/novatel_gps_driver.git
 rosdep install . --from-paths -i
 catkin build
 ```
