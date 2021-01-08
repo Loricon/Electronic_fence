@@ -82,9 +82,8 @@ sudo apt-get install ros-${ROS_DISTRO}-novatel-gps-driver
 安装步骤
 
 ```bash
-mkdir & cd Electronic_fence
-mkdir src
-cd src
+mkdir -p Electronic_fence/src
+cd Electronic_fence/src
 git clone https://github.com/Loricon/Electronic_fence.git
 cd ..
 catkin_make
