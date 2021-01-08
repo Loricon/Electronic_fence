@@ -337,7 +337,7 @@ void write_callback(const novatel_gps_msgs::InspvaxPtr& msg)
 double yaw_kalman(double east_v,double north_v)       //使用卡尔曼滤波对速度角度进行滤波优化
 {
 
-    double YAW;
+   // double YAW;
     double YAW_b2;
     double Q;       //
     double R;
