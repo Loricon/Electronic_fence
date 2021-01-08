@@ -87,7 +87,7 @@ cd Electronic_fence/src
 git clone https://github.com/Loricon/Electronic_fence.git
 cd ..
 catkin_make
-source /build/setup.bash
+source /devel/setup.bash
 ```
 运行
 ```bash
